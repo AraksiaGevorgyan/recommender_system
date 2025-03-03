@@ -22,7 +22,7 @@ def load_projects():
     conn = connect_db()
     cursor = conn.cursor(dictionary=True)  
     cursor.execute("SELECT * FROM projects")  
-    projects = cursor.fetchall()
+    projects = cursor.fetchall()  
     conn.close()
     return projects
 

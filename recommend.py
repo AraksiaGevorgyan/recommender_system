@@ -9,7 +9,7 @@ def compute_similarity(user_skills, projects_skills):
 
     # Convert skills lists into space-separated strings
     user_str = " ".join(user_skills)  
-    projects_str = [" ".join(skills) for skills in projects_skills]  
+    projects_str = [" ".join(skills) for skills in projects_skills]
 
     corpus = [user_str] + projects_str
     vectorizer = TfidfVectorizer()
