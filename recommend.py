@@ -44,7 +44,7 @@ def recommend_projects(user_id):
     similarity_scores = compute_similarity(user_skill_names, project_skills_list)
 
     # Load project details
-    projects = {p["id"]: {"id": p["id"], "title": p["name"], "skills": project_skills.get(p["id"], [])} for p in load_projects()}
+    projects = {p["id"]: {"id": p["id"], "title": p["title"], "skills": project_skills.get(p["id"], [])} for p in load_projects()}
     
     recommended_projects = sorted(zip(project_ids, similarity_scores), key=lambda x: x[1], reverse=True)
 
