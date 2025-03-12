@@ -5,7 +5,7 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return {"message": "Recommender API is running"}
+    return {"message": "Recommender API is running!"}
 
 @app.get("/recommend_projects/{user_id}")
 def get_project_recommendations(user_id: int):
