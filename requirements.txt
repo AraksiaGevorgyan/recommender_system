@@ -3,3 +3,6 @@ uvicorn
 scikit-learn
 pydantic
 python-dotenv
+cachetools
+joblib
+mysql-connector-python
